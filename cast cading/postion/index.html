@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+        font-family: sans-serif;
+        margin: 20px;
+    }
+    
+    .container {
+        width: 1000px;
+        height: 500px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        position: relative; /* Establish a containing block for absolute positioning */
+    }
+    
+    .box{
+        width: 150px;
+        height: 100px;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        margin: 10px;
+        padding: 10px;
+    }
+    .static{
+        position:static;
+    }
+    .relative {
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    
+    .absolute {
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
+    
+    .fixed {
+        position: fixed;
+        top: 100px;
+        right: 800px;
+    }
+    
+    .sticky {
+        position: sticky; /* Supported in modern browsers */
+        left: 500px;
+    
+    }
+    
+    </style>
+    <body>
+        <h1>Experimenting with Positioning</h1>
+    
+        <div class="container">
+            <div class="box static">This is a relatively static box.</div>
+            <div class="box relative">This is a relatively positioned box.</div>
+            <div class="box absolute">This is an absolutely positioned box.</div>
+            <div class="box fixed">This is a fixed positioned box.</div>
+            <div class="box sticky">This is a sticky positioned box (supported in modern browsers).</div>
+            <p>Normal content flow continues here.</p>
+        </div>
+    
+</body>
+</html>
